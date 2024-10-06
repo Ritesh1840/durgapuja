@@ -1,0 +1,217 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #FF4500;
+}
+
+.hero-section {
+    height: 90vh;
+    background-image: url('durga-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #FF4500;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #CD5C5C;
+}
+
+/* Countdown Timer */
+#countdown {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+#countdown span {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #ff4500;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#about, #history, #events {
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+#about h2, #history h2, #events h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p, #history p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#events li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#events li strong {
+    color: #8B0000;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.lightbox-content {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    top: 10%;
+}
+
+.lightbox img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}

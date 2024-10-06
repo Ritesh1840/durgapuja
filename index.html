@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Durga Puja 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Durga Puja 2024<br><br></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h2>Celebrate the Grandeur of Durga Puja</h2>
+            <p><i>Join us in welcoming Goddess Durga and experience the beauty, culture, and spirituality of this grand festival.</i></p>
+            <div id="countdown">
+                <p>Durga Puja Begins In:</p>
+                <span id="days"></span> Days
+                <span id="hours"></span> Hours
+                <span id="minutes"></span> Minutes
+                <span id="seconds"></span> Seconds
+            </div>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Durga Puja</h2>
+        <p><i>Durga Puja is a major Hindu festival celebrating the victory of Goddess Durga over the buffalo demon Mahishasura, symbolizing the triumph of good over evil. It is widely celebrated in West Bengal, Assam, Odisha, Bihar, and other parts of India, with grandeur and devotion.</i></p>
+        <p><i>The festival spans over five days—Shashthi, Saptami, Ashtami, Navami, and Dashami—each marked with rituals, prayers, and cultural events. People dress in traditional attire, participate in cultural performances, and visit beautifully decorated pandals (temporary structures) that house the idols of Goddess Durga.</i></p>
+    </section>
+
+    <section id="history">
+        <h2>The History of Durga Puja</h2>
+        <p><i>Durga Puja has deep historical roots. The festival was first celebrated in the late 16th century by the landlords of Bengal as a private event. However, it was in the 18th century when the festival became popular among the masses, especially during the rule of the British East India Company.</i></p>
+         <p><i>The first public or 'Barowari' Durga Puja was organized in Kolkata in 1790, allowing people from all social backgrounds to come together and celebrate. Over the centuries, Durga Puja has grown into a grand cultural celebration, becoming not only a religious festival but also a community event showcasing art, culture, and social unity.</i></p> </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-grid">
+            <img src="durga1.jpg" alt="Durga Idol" onclick="openLightbox();currentSlide(1)">
+            <img src="durga2.jpg" alt="Pandal Decoration" onclick="openLightbox();currentSlide(2)">
+            <img src="durga3.jpg" alt="Dhak Players" onclick="openLightbox();currentSlide(3)">
+            <img src="durga4.jpg" alt="Kumari Puja" onclick="openLightbox();currentSlide(4)">
+        </div>
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-content">
+                <div class="mySlides">
+                    <img src="durga1.jpg" alt="Durga Idol">
+                </div>
+                <div class="mySlides">
+                    <img src="durga2.jpg" alt="Pandal Decoration">
+                </div>
+                <div class="mySlides">
+                    <img src="durga3.jpg" alt="Dhak Players">
+                </div>
+                <div class="mySlides">
+                    <img src="durga4.jpg" alt="Kumari Puja">
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Events</h2>
+        <ul>
+            <li><strong>Saptami:</strong> Traditional Dance & Cultural Programs</li>
+            <li><strong>Ashtami:</strong> Kumari Puja & Sandhi Puja</li>
+            <li><strong>Navami:</strong> Bhog Distribution & Dhunuchi Naach</li>
+            <li><strong>Dashami:</strong> Sindoor Khela & Immersion Ceremony</li>
+        </ul>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@durgapuja2024.com</p>
+        <p>Phone: +91 1234567890</p>
+        <p>Location: Kolkata, India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
